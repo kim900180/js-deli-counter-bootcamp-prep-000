@@ -11,7 +11,7 @@ function nowServing(katzDeliLine) {
   var name = katzDeliLine[0]
   if (katzDeliLine.length > 0) {
     return "Currently serving " + name + "."
-    katzDeliLine.shift()
+    katzDeliLine.splice(0,1)
     return katzDeliLine
   } else if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!"
