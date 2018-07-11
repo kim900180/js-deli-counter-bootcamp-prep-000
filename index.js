@@ -19,8 +19,8 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
+  var message = ""
   if (katzDeliLine.length > 0) {
-    var message = ""
     for (var i = 0; i < katzDeliLine.length; i++) {
       message = message + (i + 1) + ". " katzDeliLine[i]
     }
