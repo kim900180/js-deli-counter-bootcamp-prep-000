@@ -21,7 +21,7 @@ function nowServing(katzDeliLine) {
 function currentLine(katzDeliLine) {
   var message = ""
   if (katzDeliLine.length > 0) {
-    for (var i = 0; i < katzDeliLine.length - ; i++) {
+    for (var i = 0; i < katzDeliLine.length - 1; i++) {
       message = message + (i + 1) + ". " + katzDeliLine[i] + ", "
     }
     return "The line is currently: " + message
